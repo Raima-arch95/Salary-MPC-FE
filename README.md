@@ -11,4 +11,4 @@ Waiting to see is someone else work.
 
 
 ## What's done:
-  [] Created Architechture
+  [ ] Created Architechture
