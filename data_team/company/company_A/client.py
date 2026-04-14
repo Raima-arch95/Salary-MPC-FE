@@ -2,10 +2,8 @@ import csv
 
 def get_aggregates(data):
 
-    if (type(data)!=string)
-        {
-            raise ValueError("Wrong type submitted to the function gat_aggregates --  need string")
-        }
+    if not (isinstance(data,str)):
+        raise ValueError("Wrong type submitted to the function gat_aggregates --  need string")
     local_sum = 0
     local_count = 0
     try:
