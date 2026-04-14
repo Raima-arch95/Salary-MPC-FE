@@ -16,3 +16,12 @@ class Test_Subject_1_Class(unittest.TestCase):
 
     
     
+def suite():
+    test_suite = unittest.TestSuite()
+    # Add all tests from a specific class
+    test_suite.addTest(unittest.makeSuite(Test_Subject_1_Class))
+    return test_suite
+
+if __name__ == '__main__':
+    runner = unittest.TextTestRunner(verbosity=2)
+    runner.run(suite())
