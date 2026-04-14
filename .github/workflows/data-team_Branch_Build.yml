@@ -18,4 +18,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print message
-        run: echo "Hello, GitHub Actions!"
+        run: echo "Running Build workflow"
+
+      - name: Only on Windows
+        if: runner.os == 'Windows'
+        run: echo "Running on Windows"
+
+      - name: Only on Windows
+        if: runner.os == 'ubuntu'
+        run: echo "Running on ubuntu"
+
+      - name: Only on Windows
+        if: runner.os == 'macos'
+        run: echo "Running on macos"
+        
+
