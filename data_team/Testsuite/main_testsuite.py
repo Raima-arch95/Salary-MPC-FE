@@ -3,7 +3,7 @@
 # this will launch all the testsuites at once
 
 import unittest
-from data_team.Testsuite import Testsuite_Prototype1
+from data_team.Testsuite import test_suite_Prototype1
 
 
 def main():
