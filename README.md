@@ -17,9 +17,11 @@ Waiting to see is someone else work.
 - [x] Created main function for company_A
 - [x] Ensure Exception Handling for CSV
 - [x] Ensure Type handling for local_sum and local_count variable
+- [x] Create Testsuite
+- [x] Test the programm primarly
+
 
 
 ## What's to do
 - [ ] Express concern about the architechture used
-- [ ] Create TestSuite
-- [ ] Test the programm
+- [ ] Create more test
