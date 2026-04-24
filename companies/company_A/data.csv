@@ -1,0 +1,4 @@
+employee_id,company_id,country,industry,company_size,employment_type,role,years_experience,years_at_company,remote_ratio,total_comp_usd
+E000001,C009,IN,Gaming,Large,Full-time,Software Engineer,7,3,50,32304.52
+E000002,C078,DE,E-commerce,Mid,Full-time,Data Scientist,12,1,100,107091.3
+E000003,C066,FR,Gaming,Startup,Contract,Software Engineer,8,5,0,52604.35
