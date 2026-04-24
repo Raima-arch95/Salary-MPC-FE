@@ -7,7 +7,6 @@ Confidential Salary Benchmarking using MPC and Functional Encryption
 
 # Data Part
 
-Prototype 1 over
 
 ## What's done:
 - [x] Created architechture
@@ -18,7 +17,7 @@ Prototype 1 over
 - [x] Ensure Type handling for local_sum and local_count variable
 - [x] Create Testsuite
 - [x] Test the programm primarly
-
+- [x] Prototype 1 over
 
 
 ## What's to do
