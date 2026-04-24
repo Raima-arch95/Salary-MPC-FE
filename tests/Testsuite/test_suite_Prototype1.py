@@ -7,7 +7,7 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 PATH = os.path.join(
     ROOT_DIR,
     "companies",
-    "company_A",
+    "company_B",
     "data.csv"
 )
 
