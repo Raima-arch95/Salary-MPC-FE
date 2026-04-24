@@ -1,2 +1,8 @@
 def get_aggregates():
-    return (180000, 3)
+    return {
+        "total": (180000, 3),
+        "by_role": {
+            "Engineer": (90000, 2),
+            "Manager": (90000, 1)
+        }
+    }
