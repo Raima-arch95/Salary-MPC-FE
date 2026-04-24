@@ -1,6 +1,6 @@
-from companies.company_A.client import get_aggregates as A
-from companies.company_B.client import get_aggregates as B
-from companies.company_C.client import get_aggregates as C
+from mock_companies.company_A import get_aggregates as A
+from mock_companies.company_B import get_aggregates as B
+from mock_companies.company_C import get_aggregates as C
 
 from mpc.basic_compute import compute_average
 
