@@ -7,7 +7,7 @@ Confidential Salary Benchmarking using MPC and Functional Encryption
 
 # Data Part
 
-
+Prototype 1 over
 
 ## What's done:
 - [x] Created architechture
