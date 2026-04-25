@@ -2,11 +2,11 @@ from mock_companies.company_A import get_aggregates as A
 from mock_companies.company_B import get_aggregates as B
 from mock_companies.company_C import get_aggregates as C
 
-from mpc.secure_compute import compute_average_secure
-import asyncio
+from mpc.basic_compute import compute_average
 
 
 def main():
+    # Step 1: Collect data from companies
     company_data = [
         A(),
         B(),
@@ -15,9 +15,11 @@ def main():
 
     print("Collected Data:", company_data)
 
-    avg = asyncio.run(compute_average_secure(company_data))
+    # Step 2: Compute global average
+    avg = compute_average(company_data)
 
-    print("Secure Global Average Salary:", avg)
+    # Step 3: Display result
+    print("Global Average Salary:", avg)
 
 
 if __name__ == "__main__":
