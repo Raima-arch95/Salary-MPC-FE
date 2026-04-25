@@ -11,6 +11,13 @@ PATH = os.path.join(
     "data.csv"
 )
 
+empty_path = os.path.join(
+    ROOT_DIR,
+    "tests",
+    "empty.csv"
+)
+
+
 class Test_Subject_1_Class(unittest.TestCase):
     def test_classic(self):
         self.assertEqual(TS1.get_aggregates(PATH),(192000.17, 3))
@@ -28,6 +35,9 @@ class Test_Subject_1_Class(unittest.TestCase):
             TS1.get_aggregates(25)
 
         self.assertEqual( str(context.exception),"Wrong type submitted to the function gat_aggregates --  need string")
+
+    def test_empty_file(self):
+        self.assertEqual(TS1.get_aggregates(empty_path), (0, 0))
      
     
 
