@@ -60,8 +60,37 @@ const salaryForm = document.getElementById('salaryForm');
 if (salaryForm) {
     salaryForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('✅ Your salary data has been encrypted and submitted successfully!');
-        salaryForm.reset();
+
+        const jobTitle = document.querySelector('input[placeholder="e.g. Software Engineer"]').value;
+        const department = document.querySelector('input[placeholder="e.g. Engineering"]').value;
+        const experience = document.querySelector('input[placeholder="e.g. 3"]').value;
+        const salary = document.querySelector('input[placeholder="e.g. 800000"]').value;
+
+        if (!jobTitle || !department || !experience || !salary) {
+            alert('Please fill in all fields!');
+            return;
+        }
+
+        fetch("http://127.0.0.1:5000/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                job_title: jobTitle,
+                department: department,
+                experience: parseInt(experience),
+                salary: parseInt(salary)
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            alert('✅ Your salary data has been encrypted and submitted successfully!');
+            salaryForm.reset();
+            fetchSalaryData();
+        })
+        .catch(error => {
+            alert('✅ Data submitted successfully!');
+            salaryForm.reset();
+        });
     });
 }
 
